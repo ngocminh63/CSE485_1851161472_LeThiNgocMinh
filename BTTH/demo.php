@@ -26,7 +26,7 @@
                     <div class="header-right">
                         <div class="header-meta">
                             <ul>
-                                <li class="login"><a href="#" >Login</a></li>  
+                                <li class="login"><a href="admin/login.php" >Login</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">

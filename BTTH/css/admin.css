@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+}
+.img_login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    background-size: 75%;
+}
