@@ -1,7 +1,7 @@
 function kiemtra(e){
     e.preventDefault();
-  var user = document.getElementById("username");
-  var password = document.getElementById("password");
+  var user = document.getElementById("txtUserName");
+  var password = document.getElementById("txtPassword");
   if(user.value == ""){
       document.getElementById("erruser").innerHTML = "Tên khac rong";
       user.style.background = "red";

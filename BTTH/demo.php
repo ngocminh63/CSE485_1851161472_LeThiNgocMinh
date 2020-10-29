@@ -26,7 +26,7 @@
                     <div class="header-right">
                         <div class="header-meta">
                             <ul>
-                                <li class="login"><a href="admin/login.php" >Login</a></li>  
+                                <li class="login"><a href="#" >Login</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
@@ -165,29 +165,28 @@
         </div>
     </nav>
     <menu>
-       
-
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <img src="Images/baner-tuyen.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/banner-webthumb.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/nganh-thuy-loi-vietthumb.jpg" class="d-block w-100" alt="...">
-                  </div>
                 </div>
+                <div class="carousel-item">
+                    <img src="Images/banner-webthumb.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/nganh-thuy-loi-vietthumb.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div>  
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
-              </div>
+            </div>
         </div>
 
     </menu>

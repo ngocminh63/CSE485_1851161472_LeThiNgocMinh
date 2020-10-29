@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="process-register.php" method="POST">
+                <form action="admin/login.php" method="POST">
                     <div class="form-group">
                         <label for="">User Name</label>
                         <input type="text" class="form-control" name="txtUserName" id="txtUserName" aria-describedby="emailHelpId" placeholder="">
