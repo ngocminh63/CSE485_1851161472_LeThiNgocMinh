@@ -26,7 +26,7 @@
                     <div class="header-right">
                         <div class="header-meta">
                             <ul>
-                                <li class="login"><a href="#" >Login</a></li>  
+                                <li class="login"><a href="admin/login.php" >Login</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
@@ -95,7 +95,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">đÀO TẠO</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ĐÀO TẠO</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">THẠC SĨ</a>
                         <a class="dropdown-item" href="#">ĐẠI HỌC CHÍNH QUY</a>

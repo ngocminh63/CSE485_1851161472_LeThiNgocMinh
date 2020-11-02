@@ -10,37 +10,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <main class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="admin/login.php" method="POST">
+                <form action="process-register.php" method="POST">
                     <div class="form-group">
-                        <label for="">User Name</label>
-                        <input type="text" class="form-control" name="txtUserName" id="txtUserName" aria-describedby="emailHelpId" placeholder="">
+                        <label for="txtFirstName">First Name:</label>
+                        <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
                     </div>
                     <div class="form-group">
-                        <label for="">Last Name</label>
-                        <input type="text" class="form-control" name="txtLastName" id="txtLastName" aria-describedby="emailHelpId" placeholder="">
+                        <label for="txtLastName">Last Name:</label>
+                        <input type="text" class="form-control" name="txtLastName" id="txtLastName">
                     </div>
                     <div class="form-group">
-                        <label for="">Email</label>
-                        <input type="email" class="form-control" name="txtEmail" id="txtEmail" aria-describedby="emailHelpId" placeholder="">
-                    </div>
-                        <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="password" class="form-control" name="txtPassword" id="txtPassword" aria-describedby="emailHelpId" placeholder="">
+                        <label for="txtEmail">Email:</label>
+                        <input type="email" class="form-control" name="txtEmail" id="txtEmail">
                     </div>
                     <div class="form-group">
-                        <label for="">Confirm Password</label>
-                        <input type="password" class="form-control" name="txtPassword2" id="txtPassword2" aria-describedby="emailHelpId" placeholder="">
+                        <label for="txtPassword1">Password:</label>
+                        <input type="password" class="form-control" name="txtPassword1" id="txtPassword1">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="form-control btn btn-primary" value="Register" name="txtLogin" id="txtLogin" aria-describedby="emailHelpId" placeholder="">
+                        <label for="txtPassword2">Password Confirm:</label>
+                        <input type="password" class="form-control" name="txtPassword2" id="txtPassword2">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control bg-success text-light" name="sbmRegister" id="sbmRegister" value="Register">
                     </div>
                 </form>
             </div>
-        </div>    
-    </div>
+        </div>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
