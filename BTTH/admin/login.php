@@ -5,18 +5,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="admin/admin.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="/DesktopModules/EOfficeWeb/scripts/Authentication/AuthenService.js"></script>
-    <script src="/DesktopModules/EOfficeWeb/scripts/Authentication/AuthenController.js"></script>
   </head>
   <body>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form action="demo.php">
+                    <form action="admin/process-login.php">
                         <div class="form-group" style="margin-top:25px">
                             <label for="username">Tên đăng nhập</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
@@ -26,11 +23,9 @@
                             <input class="form-control" type="password" name="txtPassword" id="txtPassword" placeholder="********" required ng-model="Password"/>
                         </div>
                         <div class="m-t-lg">
-                            <ul class="list-inline">
-                                <li>
-                                    <input type="submit" name="tsubmit" id="tsubmit" value="Đăng nhập" background="blue"/>
-                                </li>
-                            </ul>
+                            <div class="form-group">
+                                <input type="submit" class="form-control bg-success text-light" name="sbmLogin" id="sbmLogin" value="Login">
+                            </div>
                         </div>
 	                    <div>
 		                    <p style="color:#111">
