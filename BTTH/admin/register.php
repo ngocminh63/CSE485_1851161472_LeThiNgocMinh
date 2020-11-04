@@ -15,12 +15,8 @@
             <div class="col-md-12">
                 <form action="process-register.php" method="POST">
                     <div class="form-group">
-                        <label for="txtFirstName">First Name:</label>
-                        <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
-                    </div>
-                    <div class="form-group">
-                        <label for="txtLastName">Last Name:</label>
-                        <input type="text" class="form-control" name="txtLastName" id="txtLastName">
+                        <label for="txtFirstName">Tên đăng nhập:</label>
+                        <input type="text" class="form-control" name="txtUserName" id="txtUserName">
                     </div>
                     <div class="form-group">
                         <label for="txtEmail">Email:</label>

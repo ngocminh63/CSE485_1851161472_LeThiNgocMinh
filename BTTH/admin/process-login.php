@@ -1,8 +1,8 @@
 <?php
     $errors = array();
 
-    $email = $_POST['txtEmail'];
-	if (empty($email)) {
+    $user_name = $_POST['txtUserName'];
+	if (empty($user_name)) {
 		$errors[] = 'You forgot to enter your email.';
 	}
 
@@ -14,14 +14,14 @@
     if (empty($errors)) {
         require("includes/config.php");
         // B2: Khai bao truy van
-        $sql = "SELECt * FROM users WHERE email = '$email' AND status = 1";
+        $sql = "SELECt * FROM users WHERE email = '$user_name' AND status = 1";
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0){
             $row = mysqli_fetch_assoc($result);
             if(password_verify($password, $row['password']))
             {
                 session_start();
-                $_SESSION['username'] = $email;
+                $_SESSION['username'] = $user_name;
                 header("Location:admin.php");
                 exit();
             }else{

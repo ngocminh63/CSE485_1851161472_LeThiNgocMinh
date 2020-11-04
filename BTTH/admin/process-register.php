@@ -1,15 +1,11 @@
 <?php
     $errors = array();
 
-    $first_name = $_POST['txtFirstName'];
-	if (empty($first_name)) {
+    $user_name = $_POST['txtUserName'];
+	if (empty($user_name)) {
 		$errors[] = 'You forgot to enter your first name.';
     }
-    
-    $last_name = $_POST['txtLastName'];
-	if (empty($last_name)) {
-		$errors[] = 'You forgot to enter your last name.';
-    }
+ 
     
     $email = $_POST['txtEmail'];
 	if (empty($email)) {
@@ -37,8 +33,8 @@
         }else{
             $hashed_passcode = password_hash($password1, PASSWORD_DEFAULT);
             $activation_code = substr(md5(uniqid(rand(), true)), 16, 16);
-            $sql = "INSERT INTO users (first_name, last_name, email, password, registration_date, activation_code) 
-                    VALUES ('$first_name', '$last_name', '$email', '$hashed_passcode', NOW(), '$activation_code')";
+            $sql = "INSERT INTO users (user_name, email, password, registration_date, activation_code) 
+                    VALUES ('$user_name', '$email', '$hashed_passcode', NOW(), '$activation_code')";
             if(mysqli_query($conn, $sql)){
                 require_once "contact.php";
                 $m = new sendMail();
