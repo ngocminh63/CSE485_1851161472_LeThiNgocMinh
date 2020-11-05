@@ -16,7 +16,7 @@
 <body style="border-top: 10px solid #2b3f8d;">
     <header class="header">
         <div class="container">
-            <div class="row align-items-center align-items-md-end">
+            <div class="row align-items-center align-items-md-end" style="margin: 10px 0 10px 0;">
                 <div class="col-lg-7 col-9">
                     <div class="header-brand">
                         <a href="#"><img src="Images/logo.png" alt="" class="logo"></a>
@@ -24,9 +24,9 @@
                 </div>
                 <div class="col-lg-5 col-3">
                     <div class="header-right">
-                        <div class="header-meta">
+                        <div class="form-inline header-meta" style="float:right; border-bottom: 1px solid grey;">
                             <ul>
-                                <li class="login"><a href="admin/login.php" >Login</a></li>  
+                                <li class="login"><a href="admin/login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
@@ -34,137 +34,136 @@
                             </div>
                         </div>
                         
-                        <div class="search d-none d-md-block">
-                            <div class="form">
+                        <div class="form-inline search d-none d-md-block" style="float:right;">
+                            <div class="form-group">
+                                <span class="glyphicon glyphicon-search"></span>
                                 <input type="text" id="keyWord" placeholder="Tìm kiếm">
-                                <input type="button" value="Tìm" class="input-submit">
                             </div>
+                            <input type="button" value="Tìm" class="btn btn-primary input-submit">
                         </div>
                     </div>
                 </div>
             </div>
-        
-            
-
-            
         </div>
     </header>
-    <nav class="navbar navbar-expand-sm navbar-light " style="background-color: #0A1F77;">
-        <button class="navbar-toggler d-lg-none bg-white"  type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <form class="form-inline my-2 my-lg-0 d-block d-md-none position-relative">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn my-2 my-sm-0 position-absolute" style="right: 0%;bottom: 0.1%;" type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <div class="collapse navbar-collapse" id="collapsibleNavId" >
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                <li class="nav-item active my-auto">
-                    <a class="nav-link" href="#"><i class="fa fa-home"></i></span></a>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TIN TỨC & THÔNG BÁO</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">TIN VIDEO</a>
-                        <a class="dropdown-item" href="#">TIN TỨC</a>
-                        <a class="dropdown-item" href="#">THÔNG BÁO</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TUYỂN SINH</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">VĂN BẰNG 2</a>
-                        <a class="dropdown-item" href="#">TIẾN SĨ</a>
-                        <a class="dropdown-item" href="#">VỪA LÀM VỪA HỌC</a>
-                        <a class="dropdown-item" href="#">TUYỂN SINH LIÊN THÔNG</a>
-                    </div>
-                </li>
-                <li class="nav-item my-auto">
-                    <a class="nav-link" href="#">LIÊN HỆ</a>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GIỚI THIỆU</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">TỔNG QUAN</a>
-                        <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
-                        <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
-                        <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
-                        <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
-                        <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ĐÀO TẠO</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">THẠC SĨ</a>
-                        <a class="dropdown-item" href="#">ĐẠI HỌC CHÍNH QUY</a>
-                        <a class="dropdown-item" href="#">CAM KẾT ĐẢM BẢO CHẤT LƯỢNG ĐÀO TẠO</a>
-                        <a class="dropdown-item" href="#">TIẾN SĨ</a>
-                        <a class="dropdown-item" href="#">VỪA LÀM VỪA HỌC</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GIỚI THIỆU</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">TỔNG QUAN</a>
-                        <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
-                        <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
-                        <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
-                        <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
-                        <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NGHIÊN CỨU</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">TIN KHOA HỌC CÔNG NGHỆ</a>
-                        <a class="dropdown-item" href="#">CÁC ĐƠN VỊ KHCN</a>
-                        <a class="dropdown-item" href="#">VĂN BẢN, CƠ CHẾ, BIỂU MẪU</a>
-                        <a class="dropdown-item" href="#">LIÊN HỆ </a>
-                        <a class="dropdown-item" href="#">QUỸ PHÁT TRIỂN KH & CN</a>
-                        <a class="dropdown-item" href="#">NCKH & CHUYỂN GIAO CÔNG NGHỆ</a>
-                        <a class="dropdown-item" href="#">HỘI NGHỊ, HỘI THẢO</a>
-                        <a class="dropdown-item" href="#">THÔNG BÁO KHCN</a>
-                        <a class="dropdown-item" href="#">TẠP CHÍ KHKT THỦY LỢI & MÔI TRƯỜNG</a>
-                        <a class="dropdown-item" href="#">SỞ HỮU TRÍ TUỆ</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SINH VIÊN</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">SINH VIÊN HIỆN TẠI</a>
-                        <a class="dropdown-item" href="#">GIÁO VIÊN CHỦ NHIỆM</a>
-                        <a class="dropdown-item" href="#">QUY CHẾ QUY ĐỊNH</a>
-                        <a class="dropdown-item" href="#">HỌC PHÍ</a>
-                        <a class="dropdown-item" href="#">LIÊN HỆ</a>
-                        <a class="dropdown-item" href="#">SINH VIÊN TỐT NGHIỆP</a>
-                        <a class="dropdown-item" href="#">HOẠT ĐỘNG SINH VIÊN</a>
-                        <a class="dropdown-item" href="#">HỖ TRỢ SINH VIÊN</a>
-                        <a class="dropdown-item" href="#">CƯU SINH VIÊN</a>
-                        <a class="dropdown-item" href="#">SINH VIÊN TƯƠNG LAI</a>
-                        <a class="dropdown-item" href="#">THÔNG BÁO</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ĐỐI NGOẠI</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">GIỚI THIỆU CHUNG</a>
-                        <a class="dropdown-item" href="#">TIN TỨC ĐỐI NGOẠI</a>
-                        <a class="dropdown-item" href="#">HỢP TÁC ĐÀO TẠO QUỐC TẾ</a>
-                        <a class="dropdown-item" href="#">DỰ ÁN QUỐC TẾ</a>
-                        <a class="dropdown-item" href="#">THỎA THUẬN HỢP TÁC</a>
-                        <a class="dropdown-item" href="#">QUY CHẾ, QUY ĐỊNH VỀ ĐỐI NGOẠI</a>
-                        <a class="dropdown-item" href="#">LIÊN HỆ</a>
-                    </div>
-                </li>
-                <li class="nav-item my-auto">
-                    <a class="nav-link" href="#">VĂN BẢN</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-sm navbar-light " style="background-color: #0A1F77; margin-bottom: 0px; border-radius:0px;">
+        <div class="container">   
+            <button class="navbar-toggler d-lg-none bg-white"  type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0 d-block d-md-none position-relative">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn my-2 my-sm-0 position-absolute" style="right: 0%;bottom: 0.1%;" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="collapse navbar-collapse" id="collapsibleNavId" >
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active my-auto">
+                        <a class="nav-link" href="#"><i class="fa fa-home"></i></span></a>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">TIN TỨC & THÔNG BÁO</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">TIN VIDEO</a>
+                            <a class="dropdown-item" href="#">TIN TỨC</a>
+                            <a class="dropdown-item" href="#">THÔNG BÁO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">TUYỂN SINH</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">VĂN BẰNG 2</a>
+                            <a class="dropdown-item" href="#">TIẾN SĨ</a>
+                            <a class="dropdown-item" href="#">VỪA LÀM VỪA HỌC</a>
+                            <a class="dropdown-item" href="#">TUYỂN SINH LIÊN THÔNG</a>
+                        </div>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="#" style="color: white;">LIÊN HỆ</a>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">GIỚI THIỆU</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">TỔNG QUAN</a>
+                            <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
+                            <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
+                            <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
+                            <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
+                            <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">ĐÀO TẠO</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">THẠC SĨ</a>
+                            <a class="dropdown-item" href="#">ĐẠI HỌC CHÍNH QUY</a>
+                            <a class="dropdown-item" href="#">CAM KẾT ĐẢM BẢO CHẤT LƯỢNG ĐÀO TẠO</a>
+                            <a class="dropdown-item" href="#">TIẾN SĨ</a>
+                            <a class="dropdown-item" href="#">VỪA LÀM VỪA HỌC</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">GIỚI THIỆU</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">TỔNG QUAN</a>
+                            <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
+                            <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
+                            <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
+                            <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
+                            <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">NGHIÊN CỨU</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">TIN KHOA HỌC CÔNG NGHỆ</a>
+                            <a class="dropdown-item" href="#">CÁC ĐƠN VỊ KHCN</a>
+                            <a class="dropdown-item" href="#">VĂN BẢN, CƠ CHẾ, BIỂU MẪU</a>
+                            <a class="dropdown-item" href="#">LIÊN HỆ </a>
+                            <a class="dropdown-item" href="#">QUỸ PHÁT TRIỂN KH & CN</a>
+                            <a class="dropdown-item" href="#">NCKH & CHUYỂN GIAO CÔNG NGHỆ</a>
+                            <a class="dropdown-item" href="#">HỘI NGHỊ, HỘI THẢO</a>
+                            <a class="dropdown-item" href="#">THÔNG BÁO KHCN</a>
+                            <a class="dropdown-item" href="#">TẠP CHÍ KHKT THỦY LỢI & MÔI TRƯỜNG</a>
+                            <a class="dropdown-item" href="#">SỞ HỮU TRÍ TUỆ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">SINH VIÊN</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">SINH VIÊN HIỆN TẠI</a>
+                            <a class="dropdown-item" href="#">GIÁO VIÊN CHỦ NHIỆM</a>
+                            <a class="dropdown-item" href="#">QUY CHẾ QUY ĐỊNH</a>
+                            <a class="dropdown-item" href="#">HỌC PHÍ</a>
+                            <a class="dropdown-item" href="#">LIÊN HỆ</a>
+                            <a class="dropdown-item" href="#">SINH VIÊN TỐT NGHIỆP</a>
+                            <a class="dropdown-item" href="#">HOẠT ĐỘNG SINH VIÊN</a>
+                            <a class="dropdown-item" href="#">HỖ TRỢ SINH VIÊN</a>
+                            <a class="dropdown-item" href="#">CƯU SINH VIÊN</a>
+                            <a class="dropdown-item" href="#">SINH VIÊN TƯƠNG LAI</a>
+                            <a class="dropdown-item" href="#">THÔNG BÁO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">ĐỐI NGOẠI</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">GIỚI THIỆU CHUNG</a>
+                            <a class="dropdown-item" href="#">TIN TỨC ĐỐI NGOẠI</a>
+                            <a class="dropdown-item" href="#">HỢP TÁC ĐÀO TẠO QUỐC TẾ</a>
+                            <a class="dropdown-item" href="#">DỰ ÁN QUỐC TẾ</a>
+                            <a class="dropdown-item" href="#">THỎA THUẬN HỢP TÁC</a>
+                            <a class="dropdown-item" href="#">QUY CHẾ, QUY ĐỊNH VỀ ĐỐI NGOẠI</a>
+                            <a class="dropdown-item" href="#">LIÊN HỆ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="#" style="color: white;">VĂN BẢN</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <menu>
+    <menu style="background-color: #0A1F77; margin: 0 0 0 0;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -188,7 +187,6 @@
                 </a>
             </div>
         </div>
-
     </menu>
     <div class="container">
         <div class="quick-link">
