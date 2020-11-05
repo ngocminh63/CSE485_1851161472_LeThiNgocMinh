@@ -1,3 +1,27 @@
+
+<?php
+    require 'includes/config.php';
+    if($_POST['username']==""||$_POST['email']==""||$_POST['role']==""||$_POST['password']==""||$_POST['created_at']==""||$_POST['updated_at']=="")
+    {
+        header("location:index.php?err=loi");
+    } 
+    else{
+        $id=$_POST['id'];
+        $user_name=$_POST['username'];
+        $email=$_POST['email'];
+        $role=$_POST['role'];
+        $password=$_POST['password'];
+        $created_at=$_POST['created_at'];
+        $updated_at=$_POST['updated_at'];
+        $sql = "INSERT INTO lop  (id,username,email,role,password,created_at,updated_at)
+        VALUES ('$id', '$user_name', '$email', '$role','$password','$created_at','$updated_at')";
+        if (mysqli_query($conn, $sql)) {
+            header('location: index.php  ');
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($connect);
+        }
+    };
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,7 +37,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="process-register.php" method="POST">
+                <form action="index.php" method="POST">
                     <div class="form-group">
                         <label for="txtFirstName">Tên đăng nhập:</label>
                         <input type="text" class="form-control" name="txtUserName" id="txtUserName">
@@ -21,6 +45,13 @@
                     <div class="form-group">
                         <label for="txtEmail">Email:</label>
                         <input type="email" class="form-control" name="txtEmail" id="txtEmail">
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select class="text-input" name="role">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="txtPassword1">Password:</label>

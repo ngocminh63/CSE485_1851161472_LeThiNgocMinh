@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form action="admin/process-login.php">
+                    <form action="process-login.php">
                         <div class="form-group" style="margin-top:25px">
                             <label for="username">Tên đăng nhập</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
@@ -29,7 +29,7 @@
                         </div>
 	                    <div>
 		                    <p style="color:#111">
-			                    Bạn chưa có tài khoản? <a href="admin/register.php" class="">Gửi yêu cầu</a> tạo tài khoản mới
+			                    Bạn chưa có tài khoản? <a href="users/register.php" class="">Gửi yêu cầu</a> tạo tài khoản mới
 		                    </p>
 	                    </div>
 	                    <div>

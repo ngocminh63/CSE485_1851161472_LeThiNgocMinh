@@ -501,7 +501,7 @@
                                 <div class="card-info-body">
                                     <h4 class="card-info-title">
                                         <a href="http://www.tlu.edu.vn/nghien-cuu/nghiem-thu-de-tai-khoa-hoc-cong-nghe-do-13229">Nghiệm thu đề tài khoa học công nghệ do nhóm nghiên cứu trường Đại học Thủy Lợi</a>
-                                        <span><img src="Images/new.gif" alt=""></span>
+
                                     </h4>
                                 </div>
                             </div>
@@ -512,7 +512,7 @@
                                 <div class="card-info-body">
                                     <h4 class="card-info-title">
                                         <a href="http://www.tlu.edu.vn/nghien-cuu/hoi-thao-quoc-te-ve-cong-nghe-tien-tien-13222">Hội thảo quốc tế về công nghệ tiên tiến trong xử lý tín hiệu, viễn thông và điện toán(Sigtelcom 2020)</a>
-                                        <span><img src="Images/new.gif" alt=""></span>
+                                        
                                     </h4>
                                 </div>
                             </div>
