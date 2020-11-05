@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 02, 2020 lúc 10:05 AM
+-- Thời gian đã tạo: Th10 05, 2020 lúc 01:24 PM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.4.9
 
@@ -77,8 +77,17 @@ CREATE TABLE `users` (
   `role` enum('Author','Admin') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `role`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'nnminh', '123456@gmail.com', 'Admin', '123456', '2020-11-04 03:04:47', '2020-11-04 03:04:47'),
+(2, 'ltnminh', '1851161472@e.tlu.edu.vn', 'Admin', '123456', '2020-11-12 01:30:18', '2020-11-12 01:30:18'),
+(3, 'ttthien', '1851161234@e.tlu.edu', 'Author', '123456', '2020-11-18 01:31:06', '2020-11-18 01:31:06');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -133,7 +142,7 @@ ALTER TABLE `topics`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
