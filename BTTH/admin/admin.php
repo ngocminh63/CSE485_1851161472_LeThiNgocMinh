@@ -9,7 +9,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/admin.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,12 +32,11 @@
               <a class="dropdown-item" href="#">Manager Topics</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="users/logout.php">Logout</a>
-          </li> 
-        </ul>
-      </div>
+        </ul> 
+      </div> 
     </nav>
+    
+  <!-- // header -->
     <main class="container">
         <div class="row">
             <div class="col-md-12">
