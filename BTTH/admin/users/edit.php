@@ -5,21 +5,16 @@
   $id = $_GET['id'];
   $user = viewRecord($id);
   foreach ($user as $row){
-    $user_name =  $row['1'];
+    $username =  $row['1'];
     $email = $row['2'];
-    $role = $row['3'];
-    $password=$row['4'];
   }
   
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){
     global $conn;
-    $user_name = trim( strip_tags( $_POST['username'] ) );
+    $username = trim( strip_tags( $_POST['username'] ) );
     $email = trim( strip_tags( $_POST['email'] ) );
-    $password = trim( strip_tags( $_POST['password'] ));
-    $role = trim( strip_tags( $_POST['role'] ) );
-    // $date = trim( strip_tags( $_POST['date'] ) );
-    $sql = "UPDATE users SET username = '$user_name', email = '$email',role = '$role', password = '$password' where id ='$id'";
+    $sql = "UPDATE users SET username = '$username', email = '$email' where id ='$id'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     header('Location: index.php');
@@ -44,9 +39,8 @@
     $id = $_GET['id'];
     $user = viewRecord($id);
     foreach ($user as $row){
-      $username =  $row['1'];
+      $name =  $row['1'];
       $email = $row['2'];
-      $role = $row['3'];
     }
   ?>
     <div class="container">
@@ -56,23 +50,12 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id='.$_GET['id']; ?>" method="post" class="boder border-success mt-5" >
                 <p>Plese edit the input values and submit to update the record.</p>
                 <div class="form-group ">
-                    <label><strong>User Name <span class="text-danger"></span></strong></label>
-                    <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
+                    <label><strong> User Name <span class="text-danger"></span></strong></label>
+                    <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 </div>
                 <div class="form-group">
                     <label for=""><strong>Email</strong></label>
-                    <textarea class="form-control" name="description"  rows="3" ><?php echo $description; ?></textarea>
-                </div>
-                <div class="form-group">
-                  <label for=""><strong>Password</strong></label>
-                  <input type="text" class="form-control" name="salary" value="<?php echo $salary; ?>" aria-describedby="helpId" >
-                </div>
-                <div class="form-group">
-                    <label>Role</label>
-                    <select class="text-input" name="role">
-                        <option value="user">User</option>
-                        <option value="admin">Admin</option>
-                    </select>
+                    <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
                 </div>
                 <div class="form-group">
                     <input type="submit" name="submit" class="btn btn-primary" value="Save">
@@ -81,9 +64,6 @@
             </form>
             </div>
         </div>
-        <?php
-            
-        ?>
     </div>
 
 

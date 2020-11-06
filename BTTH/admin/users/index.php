@@ -49,13 +49,13 @@
                 <td><?php echo $row['5']; ?></td>
                 <td><?php echo $row['6']; ?></td>
                 <td>
-                  <a href="Edit.php?id=<?php echo $row['0']; ?>">Edit</a>
+                  <a href="edit.php?id=<?php echo $row['0']; ?>">Edit</a>
                   <a onclick="confirm_delete()" href="#" class="delete">Delete</a>
                 </td>
               </tr>
             </tbody>
           <?php
-            }
+          }
           ?>
         </table>
       </div>

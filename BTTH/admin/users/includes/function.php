@@ -8,10 +8,10 @@
     }
     function viewRecord($id){
         global $conn;
-        $sql = "SELECT * FROM employees WHERE id = '$id'";
+        $sql = "SELECT * FROM users WHERE id = '$id'";
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_all($result);
-        return $employees;
+        return $user;
     }
     function deleteRecord($id){
         global $conn;

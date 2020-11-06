@@ -40,7 +40,7 @@
           $sql = "INSERT INTO users (username, email,role, password) VALUES (?,?,?,?)";
 
           if($stmt = mysqli_prepare($conn, $sql)){
-              mysqli_stmt_bind_param($stmt, "ssss", $param_name, $email, $role, $password);
+              mysqli_stmt_bind_param($stmt, "sssss", $param_name, $email, $role, $password);
 
               $param_name = $username;
 

@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form action="process-login.php">
+                    <form action="users/process-login.php">
                         <div class="form-group" style="margin-top:25px">
                             <label for="username">Tên đăng nhập</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
