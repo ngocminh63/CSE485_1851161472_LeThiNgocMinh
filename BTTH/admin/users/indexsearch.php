@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trường Đại học Thủy Lợi</title>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/demo.css">
     <script src="JS/jquery-3.5.1.js"></script>
@@ -12,8 +18,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e9d4d2468.js" crossorigin="anonymous"></script>
-</head>
-<body style="border-top: 10px solid #2b3f8d;">
+  </head>
+  <body style="border-top: 10px solid #2b3f8d;">
     <header class="header">
         <div class="container">
             <div class="row align-items-center align-items-md-end" style="margin: 10px 0 10px 0;">
@@ -64,15 +70,46 @@
                     <li class="nav-item my-auto">
                         <a class="nav-link" href="#" style="color: white;">MANAGER TOPICS</a>
                     </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link" href="#" style="color: white;">MANAGER USERS</a>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">MANAGER USERS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="indexsearch.php">Tìm kiếm</a>
+                            <a class="dropdown-item" href="index.php">QL người dùng</a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <footer class="footer-page">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <select name="" id="user">
+                    <option value="0">-- Chọn tên người sử dụng --</option>
+                    <!-- Giá trị cần có ở đây lấy từ CSDL -->
+                    <?php
+                    require("includes/config.php");
+                    // 2. Khai bao truy van
+                    $sql = "SELECT * FROM users";
+                    mysqli_set_charset($conn,'UTF8');
+                    $result = mysqli_query($conn,$sql);
+                    // 3. Xu ly ket qua
+                    while($row = mysqli_fetch_assoc($result)){
+                        echo "<option value='".$row['id']."' >".$row['username']."</option>";
+                    }
+
+                    ?>
+                </select>
+            </div>
+            <div class="col-md-8">
+            <select name="" id="post">
+                    <option value="0">-- tên bài --</option>
+                    <!-- Giá trị cần có ở đây lấy từ CSDL nhưng tương ứng với Phòng ban được chọn-->
+            </select>
+            </div>
+        </div>
+      </div>
+      <footer class="footer-page">
         <div class="footer-top" >
             <div class="container">
                 <div class="row">
@@ -137,6 +174,11 @@
             </div>
         </div>
     </footer>
-    <script src="JS/JavaScript.js"></script>
-</body>
+      <!-- <a href="" id="lienKet">Click Here</a> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

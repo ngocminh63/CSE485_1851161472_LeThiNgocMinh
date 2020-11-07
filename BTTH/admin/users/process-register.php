@@ -30,6 +30,31 @@
             $activation_code = substr(md5(uniqid(rand(), true)), 16, 16);
             $sql = "INSERT INTO users (username, email, role, password, created_at, updated_at, activation_code) 
                     VALUES ('$username', '$email', '$role', '$hashed_passcode', NOW(), NOW(), '$activation_code')";
+                    if(mysqli_query($conn, $sql)){
+                        require_once "contact.php";
+                        $m = new sendMail();
+        
+                        $to = $email;
+                        $tieudethu = "[leminh] Please verify your email address";           
+                        $noidungthu = "Bạn đã đăng kí tài khoản tại Web2Code2VN, để sử dụng tài khoản, vui lòng nhấp vào liên kết
+                        sau đây: <a href='http://localhost/prac04/active.php?code=".$activation_code."'>Click Here</a>";
+                        
+                        //dùng mail test, đừng dùng mail chính thức
+                        $from = "1851161472@e.tlu.edu.vn";
+                    
+                        //pass email gmail
+                        $p = "Micmic12a123456"; //thay_mat_khau_cua_ban_vao_day
+                        $m -> sendMailFromLocalhost($to, $from, $tennguoigui="leminh", $tieudethu, $noidungthu, $from, $p, $error);
+                        header("Location: index.php");
+                        exit();
+                    }else{
+                        echo "Loi. Kiem tra lai cau truy van: ".$sql;
+                    }
+                }
+            }else{
+                echo "Hien thi loi";
+            }
+        ?>
         }
     }
     }else{
