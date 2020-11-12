@@ -33,7 +33,7 @@
                             <ul>
                                 <li class="login"><a href="admin/login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
                             </ul>
-                            <div class="language">
+                            <div class="language" style="padding-bottom:10px;">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
                                 <img src="Images/en.jpg" alt="" class="lgg">
                             </div>
