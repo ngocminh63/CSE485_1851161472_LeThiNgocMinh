@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 05, 2020 lúc 01:24 PM
+-- Thời gian đã tạo: Th10 12, 2020 lúc 11:07 AM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.4.9
 
@@ -37,8 +37,15 @@ CREATE TABLE `posts` (
   `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `published` tinyint(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `posts`
+--
+
+INSERT INTO `posts` (`id`, `user_id`, `title`, `slug`, `views`, `image`, `body`, `published`, `created_at`, `updated_at`) VALUES
+(1, 1, 'bài tập lớn', 'srbwebesb', 12345, 'fasV', 'rfwa4rdyery', 0, '2020-11-12 09:32:25', '2020-11-12 09:32:25');
 
 -- --------------------------------------------------------
 
@@ -64,6 +71,14 @@ CREATE TABLE `topics` (
   `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `topics`
+--
+
+INSERT INTO `topics` (`id`, `name`, `slug`) VALUES
+(1, 'Bài tập lớn của môn công nghệ web', 'gsgikfgeiufheliuf'),
+(2, 'Danh sách BCH Đảng bộ trường nhiệm kì 2015-2020', 'ủyowueyrfiuearfhylieus');
+
 -- --------------------------------------------------------
 
 --
@@ -74,10 +89,10 @@ CREATE TABLE `users` (
   `id` int(6) NOT NULL,
   `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `role` enum('Author','Admin') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `role` enum('Author','Admin') COLLATE utf8mb4_unicode_ci DEFAULT 'Admin',
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `created_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -85,9 +100,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `role`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'nnminh', '123456@gmail.com', 'Admin', '123456', '2020-11-04 03:04:47', '2020-11-04 03:04:47'),
-(2, 'ltnminh', '1851161472@e.tlu.edu.vn', 'Admin', '123456', '2020-11-12 01:30:18', '2020-11-12 01:30:18'),
-(3, 'ttthien', '1851161234@e.tlu.edu', 'Author', '123456', '2020-11-18 01:31:06', '2020-11-18 01:31:06');
+(1, 'nnminh', '1234@gmail.com', 'Admin', '12345678', '2020-11-12 09:24:39', '2020-11-12 09:24:39'),
+(26, 'nnminh', '1851161472@e.tlu.edu.vn', 'Admin', '$2y$10$heIVOvdebnM8or4gr5i3B.E.wGHxoF/aHKbi/MnbL7Vt4aqJzDILm', '2020-11-12 09:14:34', '2020-11-12 09:14:34');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -130,19 +144,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `topics`
 --
 ALTER TABLE `topics`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
