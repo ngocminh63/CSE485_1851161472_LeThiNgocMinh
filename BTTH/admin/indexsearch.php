@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="cssuser/bootstrap.css">
+    <link rel="stylesheet" href="cssuser/demo.css">
     <script src="JS/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -32,7 +32,7 @@
                     <div class="header-right">
                         <div class="form-inline header-meta" style="float:right; border-bottom: 1px solid grey;">
                             <ul>
-                                <li class="login"><a href="admin/login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
+                                <li class="login"><a href="login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">

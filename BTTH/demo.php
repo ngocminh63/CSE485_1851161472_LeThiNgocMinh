@@ -82,17 +82,6 @@
                         <a class="nav-link" href="#" style="color: white;">LIÊN HỆ</a>
                     </li>
                     <li class="nav-item dropdown my-auto">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">GIỚI THIỆU</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">TỔNG QUAN</a>
-                            <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
-                            <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
-                            <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
-                            <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
-                            <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown my-auto">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">ĐÀO TẠO</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">THẠC SĨ</a>

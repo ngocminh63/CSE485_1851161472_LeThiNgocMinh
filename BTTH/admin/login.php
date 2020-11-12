@@ -53,11 +53,11 @@
                 <div class="col-md-12" style="background-color: white;">
                     <form action="process-login.php"method="POST">
                         <div class="form-group" style="margin-top:25px">
-                            <label for="username">TÊN ĐĂNG NHẬP</label>
+                            <label for="" class="form-label">TÊN ĐĂNG NHẬP</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
                         </div>
                         <div class="form-group">
-                            <label for="password">MẬT KHẨU</label>
+                            <label for="" class="form-label">MẬT KHẨU</label>
                             <input class="form-control" type="password" name="txtPassword" id="txtPassword" placeholder="********" required ng-model="Password"/>
                         </div>
                         <div class="m-t-lg">

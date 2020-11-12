@@ -1,25 +1,16 @@
 <?php
-    // Kiem tra
-    $errors = array();
-    $username = $_POST['txtUserName'];
+require_once('includes/config.php');
+$errors = array();
+$username = $_POST['txtUserName'];
 	if (empty($username)) {
-		$errors[] = 'You forgot to enter your email address.';
+		$errors[] = 'You forgot to enter your username.';
     }
-
-    $password = $_POST['txtPassword'];
-	
+$password = $_POST['txtPassword'];
 	if (empty($password)) {	
 			$errors[] = 'Your two password did not match.';
-	} 
-    // Kiem tra Error:
-    if (empty($errors)){
-        // B1: Ket noi database Server;
-        $conn = mysqli_connect('localhost','root','','quanli');
-        if(!$conn){
-            die('Khong the ket noi');
-        }
-        // B2: Khai bao cau truy van
-        $sql = "SELECT * FROM users WHERE username='$username'";
+    } 
+if (empty($errors)){
+    $sql = "SELECT * FROM users WHERE username='$username'";
         // echo $sql;
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0){
@@ -28,18 +19,17 @@
             $password_hash = $row['password'];
             // echo $password_hash;
             if(password_verify($password,$password_hash)){
-               section_start();
-               $_SESSION["username"]=$username
-               header("Location: admin.php");
+                echo "Xin chào " . $username . ". ,bạn đã đăng nhập thành công. <a href='admin.php'>Về trang chủ</a>";
+                die();
             }else{
-                echo "Sai mất khẩu";
+                echo "Sai mật khẩu, vui lòng nhập lại";
             }
         }else{
             echo ".....";
         }
-
-    }else{
-        // Co loi, hien thi lai loi cho nguoi dung biet
-        echo "Co loi nhap lieu ...";
+}
+else{
+        echo "Có lỗi khi nhập dữ liệu ...";
     }
+
 ?>
