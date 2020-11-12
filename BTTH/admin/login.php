@@ -1,30 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
+ <head>
     <title>Đăng nhập</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+	<style>
+    .form-control {
+        background-color: transparent;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-bottom: .0625rem solid #ccc;
+    }
+    html, body {
+        height: 100%;
+        background-color: #ccc;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .signup_container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        padding: 40px 40px;
+    }
+    </style>
+</head>
   <body>
     <main>
-        <div class="container">
+	<div class="logo_container ">
+            <img src="Images/logo.png" alt="">
+        </div>
+        <div class="signup_container" style="padding-top:50px">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12" style="background-color: white;">
                     <form action="users/process-login.php">
                         <div class="form-group" style="margin-top:25px">
-                            <label for="username">Tên đăng nhập</label>
+                            <label for="username">TÊN ĐĂNG NHẬP</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
                         </div>
                         <div class="form-group">
-                            <label for="password">Mật khẩu</label>
+                            <label for="password">MẬT KHẨU</label>
                             <input class="form-control" type="password" name="txtPassword" id="txtPassword" placeholder="********" required ng-model="Password"/>
                         </div>
                         <div class="m-t-lg">
                             <div class="form-group">
-                                <input type="submit" class="form-control bg-success text-light" name="sbmLogin" id="sbmLogin" value="Login">
+                                <button class="btn btn-dark" name="sbmLogin" id="sbmLogin" value="Login" style="padding: 8px 40px;border-radius: 2.1875rem;">ĐĂNG NHẬP</button>
                             </div>
                         </div>
 	                    <div>
