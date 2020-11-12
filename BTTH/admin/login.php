@@ -51,7 +51,7 @@
         <div class="signup_container" style="padding-top:50px">
             <div class="row">
                 <div class="col-md-12" style="background-color: white;">
-                    <form action="process-login.php"method="POST">
+                <form action="process-login.php"method="POST">
                         <div class="form-group" style="margin-top:25px">
                             <label for="" class="form-label">TÊN ĐĂNG NHẬP</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
