@@ -17,6 +17,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e9d4d2468.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar-nav li a{
+            padding:0px;
+        }
+    </style>
   </head>
   <body style="border-top: 10px solid #2b3f8d;">
     <header class="header">
