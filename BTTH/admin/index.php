@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="cssuser/bootstrap.css">
+    <link rel="stylesheet" href="cssuser/demo.css">
     <script src="JS/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -116,8 +116,8 @@
                 <td><?php echo $row['5']; ?></td>
                 <td><?php echo $row['6']; ?></td>
                 <td>
-                  <a href="edit.php?id=<?php echo $row['0']; ?>">Edit</a>
-                  <a onclick="confirm_delete()" href="#" class="delete">Delete</a>
+                    <a href="edit.php?id=<?php echo $row['0']; ?>"><i class="fa fa-pencil mr-2"></i></a>
+                    <a onclick="confirm_delete()" href="#" class="delete"><i class="fa fa-trash"></i></a>
                 </td>
               </tr>
             </tbody>

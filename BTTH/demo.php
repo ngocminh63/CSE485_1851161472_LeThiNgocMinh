@@ -98,7 +98,7 @@
                             <a class="dropdown-item" href="#">CƠ CẤU TỔ CHỨC VÀ NHÂN LỰC</a>
                             <a class="dropdown-item" href="#">CƠ SỞ VẬT CHẤT</a>
                             <a class="dropdown-item" href="#">SỨ MẠNH, TẦM NHÌN</a>
-                            <a class="dropdown-item" href="#">CÔNG TÁC ĐẢNG</a>
+                            <a class="dropdown-item" href="congtacDang.php">CÔNG TÁC ĐẢNG</a>
                             <a class="dropdown-item" href="#">CÔNG TÁC CÔNG ĐOÀN</a>
                         </div>
                     </li>

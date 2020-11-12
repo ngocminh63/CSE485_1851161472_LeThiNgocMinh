@@ -22,7 +22,7 @@ if (empty($errors)){
                 echo "Xin chào " . $username . ". ,bạn đã đăng nhập thành công. <a href='admin.php'>Về trang chủ</a>";
                 die();
             }else{
-                echo "Sai mật khẩu, vui lòng nhập lại";
+                echo "Sai mật khẩu, vui lòng nhập lại.<a href='login.php'>Về trang đăng nhập</a> ";
             }
         }else{
             echo ".....";
