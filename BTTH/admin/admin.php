@@ -64,8 +64,12 @@
                     <li class="nav-item my-auto">
                         <a class="nav-link" href="#" style="color: white;">MANAGER TOPICS</a>
                     </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link" href="#" style="color: white;">MANAGER USERS</a>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">MANAGER USERS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="indexsearch.php">Tìm kiếm</a>
+                            <a class="dropdown-item" href="index.php">QL người dùng</a>
+                        </div>
                     </li>
                 </ul>
             </div>

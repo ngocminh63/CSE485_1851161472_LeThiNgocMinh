@@ -94,7 +94,6 @@
               <th>#</th>
               <th>User Name</th>
               <th>Email</th>
-              <th>Role</th>
               <th>Password</th>
               <th>Created_at</th>
               <th>Updated_at</th>
@@ -116,7 +115,6 @@
                 <td><?php echo $row['3']; ?></td>
                 <td><?php echo $row['4']; ?></td>
                 <td><?php echo $row['5']; ?></td>
-                <td><?php echo $row['6']; ?></td>
                 <td>
                   <a href="edit.php?id=<?php echo $row['0']; ?>">Edit</a>
                   <a onclick="confirm_delete()" href="#" class="delete">Delete</a>
