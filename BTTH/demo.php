@@ -549,7 +549,7 @@
                     <div class="row row-space">
                         <div class="row">
                             <div class="col-sm">
-                                <div class="card-info-img">
+                                <div class="card-info-img" style="padding:0 0px;">
                                     <a href="http://www.tlu.edu.vn/sinh-vien-tuong-lai" target="_blank"  title="Tuyển sinh Đại Học" rel="follow, index">
                                         <img src="Images/FutureStudent.jpg" alt="">
                                     </a>
@@ -563,7 +563,7 @@
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <div class="card-info-img">
+                                <div class="card-info-img" style="padding:0 0px;">
                                     <a href="http://www.tlu.edu.vn/sinh-vien-hien-tai" target="_blank"  title="Tuyển sinh Đại Học" rel="follow, index">
                                         <img src="Images/CurentStudent.jpg" alt="">
                                     </a>
@@ -577,7 +577,7 @@
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <div class="card-info-img">
+                                <div class="card-info-img" style="padding:0 0px;">
                                     <a href="http://www.tlu.edu.vn/cuu-sinh-vien" target="_blank"  title="Tuyển sinh Đại Học" rel="follow, index">
                                         <img src="Images/Alumi.jpg" alt="">
                                     </a>
