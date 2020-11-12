@@ -51,7 +51,7 @@
         <div class="signup_container" style="padding-top:50px">
             <div class="row">
                 <div class="col-md-12" style="background-color: white;">
-                <form action="process-login.php"method="POST">
+                <form action="process-login.php" method="POST" action="process-login.php" onsubmit="return validateform()">
                         <div class="form-group" style="margin-top:25px">
                             <label for="" class="form-label">TÊN ĐĂNG NHẬP</label>
                             <input class="form-control" type="text" name="txtUserName" id="txtUserName" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
@@ -78,6 +78,21 @@
             </div>
         </div>
     </main>
+	  
+    <script>
+        function validateform() {
+            var x = document.forms["myForm"]["txtUserName"].value;
+            if (x == "" || x == null) {
+                alert("Bạn cần nhập tên đăng nhập");
+                return false;
+            }
+            var y = document.forms["myForm"]["txtPassword"].value;
+            if (y == "" || y == null) {
+                alert("Bạn cần nhập Password");
+                return false;
+            }
+        }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
