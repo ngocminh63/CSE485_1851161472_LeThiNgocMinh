@@ -103,7 +103,7 @@
             </div>
             <div class="col-md-8">
             <select name="" id="post">
-                    <option value="0">-- tên bài --</option>
+                    <option value="0">-- Tên bài --</option>
                     <!-- Giá trị cần có ở đây lấy từ CSDL nhưng tương ứng với Phòng ban được chọn-->
             </select>
             </div>

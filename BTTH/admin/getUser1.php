@@ -4,7 +4,7 @@
     }
     require('includes/config.php');
     // 2. Khai bao Truy van
-    $sql = "SELECT * FROM users WHERE username like '%username%'";
+    $sql = "SELECT * FROM users WHERE username like '%$username%'";
     mysqli_set_charset($conn,'UTF8');
     $result = mysqli_query($conn,$sql);             //thực hiện một truy vấn đối với cơ sở dữ liệu
     $users_arr = array();
