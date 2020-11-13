@@ -128,7 +128,7 @@
                 <td><?php echo $row['6']; ?></td>
                 <td>
                     <a href="edit.php?id=<?php echo $row['0']; ?>"><i class="fa fa-pencil mr-2"></i></a>
-                    <a href="delete.php?id=<?php echo $row['0']; ?>"><i class="fa fa-trash"></i></a>
+                    <a href="delete.php?id=<?php echo $row['0']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>
                 </td>
               </tr>
             </tbody>
