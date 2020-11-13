@@ -26,7 +26,7 @@
                     <div class="header-right">
                         <div class="form-inline header-meta" style="float:right; border-bottom: 1px solid grey;">
                             <ul>
-                                <li class="login"><a href="login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
+                                <li class="login"><a href="../demo.php" style="margin-right:5px; margin-bottom:-3px;">Logout</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#" style="color: white;">MANAGER TOPICS</a>
                     </li>
                     <li class="nav-item dropdown my-auto">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">MANAGER USERS</a>
+                        <a class="nav-link dropdown-toggle" href="index.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">MANAGER USERS</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="indexsearch.php">Tìm kiếm</a>
                             <a class="dropdown-item" href="index.php">QL người dùng</a>
@@ -75,7 +75,12 @@
             </div>
         </div>
     </nav>
-    
+    <div class="container">
+            <div class="hinhdong" >
+                <img src="../Images/tenor.gif" alt="">
+                <img src="../Images/2659817ohf0nfzscv.gif" alt="" >
+            </div>
+    </div>
     <footer class="footer-page">
         <div class="footer-top" >
             <div class="container">

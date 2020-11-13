@@ -32,7 +32,7 @@
                     <div class="header-right">
                         <div class="form-inline header-meta" style="float:right; border-bottom: 1px solid grey;">
                             <ul>
-                                <li class="login"><a href="login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
+                                <li class="login"><a href="../demo.php" style="margin-right:5px; margin-bottom:-3px;">Logout</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">

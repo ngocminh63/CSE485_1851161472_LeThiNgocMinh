@@ -33,9 +33,9 @@
 //     }
 	
 	if($_POST['txtUserName'] == 'admin' && $_POST['password'] == '' ){
-        header("location:index.php");
+        header("location:admin.php");
     }else{
-        exit;
+        echo "Bạn sai tên đăng nhập hoặc mật khẩu. <a href='login.php'>Về đăng nhập</a>";
     }
 
 ?>

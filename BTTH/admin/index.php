@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Employee List</title>
+    <title>Users List</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,7 +36,7 @@
                     <div class="header-right">
                         <div class="form-inline header-meta" style="float:right; border-bottom: 1px solid grey;">
                             <ul>
-                                <li class="login"><a href="login.php" style="margin-right:5px; margin-bottom:-3px;">Login</a></li>  
+                                <li class="login"><a href="../demo.php" style="margin-right:5px; margin-bottom:-3px;">Logout</a></li>  
                             </ul>
                             <div class="language">
                                 <img src="Images/vi.jpg" alt="" class="lgg">
@@ -91,12 +91,18 @@
           <h1>Manager users</h1>
         </div>
         <div class="col-6 mb-2">
-          <a name="" id="" class="btn btn-success float-right" href="register.php" role="button">+ Add new Employee</a>
+            <div class="form-group">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" name="" id="input" aria-describedby="helpId" placeholder="Nhap ten can tim">
+            </div>
+            <input type="button" class="btn btn-primary" href="#" role="button"value="Tìm"/>
+            <input type="button" class="btn btn-primary" value="Tất cả" onclick="window.location.href='index.php'"/>
+          <a name="" id="" class="btn btn-success float-right" href="register.php" role="button">+ Add new User</a>
         </div>
         <table class="table table-dark table-striped table-hover table-bordered">
           <thead>
             <tr>
-              <th>#</th>
+              <th>ID</th>
               <th>User Name</th>
               <th>Email</th>
               <th>Role</th>
@@ -203,5 +209,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
