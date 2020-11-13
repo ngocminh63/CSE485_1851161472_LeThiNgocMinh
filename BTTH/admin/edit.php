@@ -33,6 +33,39 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    .form-control {
+        background-color: transparent;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-bottom: .0625rem solid #ccc;
+    }
+    html, body {
+        height: 100%;
+        background-color: #ccc;
+    }
+
+    .logo_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .body_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        padding: 40px 40px;
+    }
+  </style>
   </head>
   <body>
   <?php 
@@ -43,11 +76,16 @@
       $email = $row['2'];
     }
   ?>
-    <div class="container">
+    
+  <div class="logo_container ">
+    <img src="Images/logo.png" alt="">
+  </div>
+    
+    <div class="body_container" style="padding-top:50px">
       <div class="row align-center">
-            <div class="col-12 col-md-10">
+            <div class="col-12" style="background-color: white;">
             <h2>Update Record</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id='.$_GET['id']; ?>" method="post" class="boder border-success mt-5" >
+            <form name="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id='.$_GET['id']; ?>" method="post" class="boder border-success" onsubmit="return validateform()">
                 <p>Plese edit the input values and submit to update the record.</p>
                 <div class="form-group ">
                     <label><strong> User Name <span class="text-danger"></span></strong></label>
@@ -66,7 +104,20 @@
         </div>
     </div>
 
-
+    <script>
+    function validateform() {
+      var x = document.forms["myForm"]["username"].value;
+      if (x == "" || x == null) {
+        alert("Bạn cần nhập tên đăng nhập");
+        return false;
+      }
+      var y = document.forms["myForm"]["email"].value;
+      if (y == "" || y == null) {
+        alert("Bạn cần nhập email");
+        return false;
+      }
+    }
+  </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
