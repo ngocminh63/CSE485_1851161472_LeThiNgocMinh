@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-14T14:05:04.016Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="mbrPJAEu2Zl1bFZ9eV9D" version="14.7.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-06-14T14:06:57.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="tnT_w3l3kTNEAMWJzysb" version="14.7.7" type="github" pages="5">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1952" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -266,7 +266,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mMt2oVR8VySUst_ACdSh" name="Page-2">
-    <mxGraphModel dx="1102" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1102" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="H0j2o-uxDTVLAtJrjjwK-0" />
         <mxCell id="H0j2o-uxDTVLAtJrjjwK-1" parent="H0j2o-uxDTVLAtJrjjwK-0" />
@@ -281,7 +281,7 @@
         </mxCell>
         <mxCell id="c-cviStDWO0gf37jP2vC-2" value=":Quản lý,nhân viên&lt;br style=&quot;font-size: 12px;&quot;&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=12;" vertex="1" connectable="0" parent="c-cviStDWO0gf37jP2vC-1">
           <mxGeometry x="0.922" y="3" relative="1" as="geometry">
-            <mxPoint x="3" y="-18" as="offset" />
+            <mxPoint x="3" y="-6" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="c-cviStDWO0gf37jP2vC-3" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="H0j2o-uxDTVLAtJrjjwK-1">
@@ -418,7 +418,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="JZdWrecGRH0CLSicWrAZ-14" value="sd Xóa SP" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="H0j2o-uxDTVLAtJrjjwK-1">
-          <mxGeometry x="280" y="40" width="800" height="560" as="geometry" />
+          <mxGeometry x="280" y="75" width="800" height="560" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
